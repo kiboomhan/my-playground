@@ -1,15 +1,10 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+package problems.q_add_two_numbers;
+
+import utils.ListNode;
+
+public class Solution {
+
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode l3 = new ListNode();
 
         int tv = 0;
@@ -45,5 +40,6 @@ class Solution {
 
         return l3;
     }
+
 
 }
