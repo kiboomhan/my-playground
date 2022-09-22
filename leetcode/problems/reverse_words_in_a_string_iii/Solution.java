@@ -1,7 +1,5 @@
 package problems.reverse_words_in_a_string_iii;
 
-import java.util.Arrays;
-
 public class Solution {
 
     public static void main(String[] args) {
