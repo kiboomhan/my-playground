@@ -158,6 +158,9 @@ public class TreeNode {
             // rel
             TreeNode[] pp = Arrays.stream(nodes)
                     .<TreeNode>mapMulti((node, consumer) -> {
+                        if (node == null) {
+                            return;
+                        }
                         consumer.accept(node.left);
                         consumer.accept(node.right);
                     }).toArray(TreeNode[]::new);
