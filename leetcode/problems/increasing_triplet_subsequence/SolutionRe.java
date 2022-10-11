@@ -42,9 +42,6 @@ public class SolutionRe {
     }
 
     public boolean increasingTriplet(int[] nums) {
-        if (Arrays.stream(nums).distinct().count() <= 2) {
-            return false;
-        }
 
         int n1 = Integer.MAX_VALUE, n2 = Integer.MAX_VALUE;
 
