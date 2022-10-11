@@ -30,7 +30,7 @@ public class Solution {
     private Map<String, Integer> tmp = new HashMap<>();
 
     public boolean increasingTriplet(int[] nums) {
-        if (Arrays.stream(nums).distinct().count() < 2) {
+        if (Arrays.stream(nums).distinct().count() <= 2) {
             return false;
         }
         for (int i = 0; i < nums.length; i++) {
